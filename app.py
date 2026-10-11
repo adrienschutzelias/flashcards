@@ -21,11 +21,11 @@ if uploaded_file is not None:
             
         doc = pymupdf.open(pdf_path)
         
-        # Détection du nom de la classe
+        # Détection du nom de la classe / groupe
         class_name = "Classe_Inconnue"
         for page in doc:
             page_text = page.get_text("text")
-            match = re.search(r'classe\s*[:]?\s*([^\n]+)', page_text, re.IGNORECASE)
+            match = re.search(r'(?:classe|groupe)\s*[:]?\s*([^\n]+)', page_text, re.IGNORECASE)
             if match:
                 raw_class = match.group(1).strip()
                 class_name = "".join(c if c.isalnum() or c in (' ', '_') else '_' for c in raw_class).strip().replace(' ', '_')
