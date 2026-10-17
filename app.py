@@ -8,7 +8,7 @@ import tempfile
 
 st.set_page_config(page_title="Convertisseur Trombinoscope", page_icon="📇")
 
-st.title("📇 Convertisseur de Trombinoscope PDF Ecole Directe en Flashcards")
+st.title("📇 Convertisseur Trombinoscope → Flashcards")
 st.write("Glissez-déposez un ou plusieurs fichiers PDF de trombinoscope ci-dessous pour générer les archives ZIP compatibles avec l'appli de flashcards.")
 
 uploaded_files = st.file_uploader("Choisissez vos fichiers PDF de trombinoscope", type=["pdf"], accept_multiple_files=True)
@@ -163,8 +163,8 @@ if uploaded_files:
                     key=zip_name  # Clé unique indispensable pour chaque bouton dans une boucle Streamlit
                 )
 st.subheader("Tutoriel :")
-st.caption("- Téléchargez tous les trombinoscopes de vos classes via Ecole Directe, dans Consultation/Les éditions/Trombinoscope (s'il ne se passe rien, rafraichissez la page et recommencez)")
-st.caption("- Uploadez votre ou vos pdf (pour plusieurs PDF d’un coup sur mobile il faut faire un appui long sur le premier jusqu’à ce qu’il soit sélectionné, puis des appuis courts sur les suivants, et valider ensuite.")
+st.caption("- Téléchargez tous les trombinoscopes de vos classes via Ecole Directe, dans Consultation/Les éditions/Trombinoscope")
+st.caption("- Uploadez votre ou vos pdf (pour plusieurs PDF d’un coup sur mobile il faut faire un appui long sur le premier jusqu’à ce qu’il soit sélectionné, puis des appuis courts sur les suivants, et valider ensuite (s'il ne se passe rien, rafraichissez la page et recommencez).")
 st.caption("- Téléchargez le(s) ZIP fourni(s) en sortie (si plusieurs PDF d’un coup, il y aura un bouton par fichier ZIP à télécharger)")
 st.caption("- Dans l'application de flash cards, cliquer sur le bouton bleu 'CRÉER UN JEU (IMPORT ZIP)'")
 st.caption("- Retrouver le(s) fichier(s) ZIP téléchargé(s) dans votre dossier téléchargement. Vous pouvez en importer plusieurs d’un coup en faisant un appui long sur le premier, puis un appui court sur les suivant et enfin valider")
