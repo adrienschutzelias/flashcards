@@ -163,6 +163,7 @@ if uploaded_files:
                     key=zip_name  # Clé unique indispensable pour chaque bouton dans une boucle Streamlit
                 )
 st.subheader("Tutoriel :")
+st.video("https://www.youtube.com/watch?v=3r82vIgM8-o", format="video/mp4", start_time=0)
 st.caption("- Téléchargez tous les trombinoscopes de vos classes via Ecole Directe, dans Consultation/Les éditions/Trombinoscope")
 st.caption("- Uploadez votre ou vos pdf. Pour plusieurs PDF d’un coup sur mobile il faut faire un appui long sur le premier jusqu’à ce qu’il soit sélectionné, puis des appuis courts sur les suivants, et valider ensuite (s'il ne se passe rien, rafraichissez la page et recommencez).")
 st.caption("- Téléchargez le(s) ZIP fourni(s) en sortie (si plusieurs PDF d’un coup, il y aura un bouton par fichier ZIP à télécharger)")
