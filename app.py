@@ -162,8 +162,9 @@ if uploaded_files:
                     mime="application/zip",
                     key=zip_name  # Clé unique indispensable pour chaque bouton dans une boucle Streamlit
                 )
-st.write("- Téléchargez tous les trombinoscopes de vos classes sur Ecole Directe, dans Consultation/Les éditions/Trombinoscope (s'il ne se passe rien, rafraichissez la page et recommencez)")
-st.write("- Uploadez votre ou vos pdf (pour plusieurs PDF d’un coup sur mobile il faut faire un appui long sur le premier jusqu’à ce qu’il soit sélectionné, puis des appuis courts sur les suivants, et valider ensuite.")
-st.write("- Téléchargez le(s) ZIP fourni(s) en sortie (si plusieurs PDF d’un coup, il y aura un bouton par fichier ZIP à télécharger)")
-st.write("- Dans l'application de flash cards, cliquer sur le bouton bleu 'CRÉER UN JEU (IMPORT ZIP)'")
-st.write("- Retrouver le(s) fichier(s) ZIP téléchargé(s) dans votre dossier téléchargement. Vous pouvez en importer plusieurs d’un coup en faisant un appui long sur le premier, puis un appui court sur les suivant et enfin valider")
+st.subheader("Tutoriel :")
+st.caption("- Téléchargez tous les trombinoscopes de vos classes via Ecole Directe, dans Consultation/Les éditions/Trombinoscope (s'il ne se passe rien, rafraichissez la page et recommencez)")
+st.caption("- Uploadez votre ou vos pdf (pour plusieurs PDF d’un coup sur mobile il faut faire un appui long sur le premier jusqu’à ce qu’il soit sélectionné, puis des appuis courts sur les suivants, et valider ensuite.")
+st.caption("- Téléchargez le(s) ZIP fourni(s) en sortie (si plusieurs PDF d’un coup, il y aura un bouton par fichier ZIP à télécharger)")
+st.caption("- Dans l'application de flash cards, cliquer sur le bouton bleu 'CRÉER UN JEU (IMPORT ZIP)'")
+st.caption("- Retrouver le(s) fichier(s) ZIP téléchargé(s) dans votre dossier téléchargement. Vous pouvez en importer plusieurs d’un coup en faisant un appui long sur le premier, puis un appui court sur les suivant et enfin valider")
